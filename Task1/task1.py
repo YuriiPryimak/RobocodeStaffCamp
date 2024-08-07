@@ -18,7 +18,6 @@ def main():
         return
 
     # 1. Знаходимо середнє арифметичне і число, найближче до нього
-
     avg = statistics.mean(numbers)
     closest_num = min(numbers, key=lambda x: abs(x - avg))
     probability = numbers.count(closest_num) / len(numbers)
