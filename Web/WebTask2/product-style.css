@@ -51,7 +51,7 @@ body {
 }
 
 .product-item {
-    flex-basis: calc(33.333% - 20px); /* Для трьох колонок з урахуванням відступів */
+    flex-basis: calc(33.333% - 20px);
     text-align: center;
     background-color: #f4f4f4;
     padding: 10px;

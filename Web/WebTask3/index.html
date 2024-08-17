@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Спортивна Вітрина</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<header class="header">
+    <h1>Спортивна Вітрина</h1>
+</header>
+
+<main class="main">
+    <!-- Вітрина 1: Популярні види спорту -->
+    <section class="display-case">
+        <h2>Популярні види спорту</h2>
+        <div class="sports-grid">
+            <div class="sport-item">
+                <img src="img/Football.webp" alt="Футбол">
+                <p>Футбол</p>
+            </div>
+            <div class="sport-item">
+                <img src="img/Basketball.jpeg" alt="Баскетбол">
+                <p>Баскетбол</p>
+            </div>
+            <div class="sport-item">
+                <img src="img/Tenis.jpg" alt="Теніс">
+                <p>Теніс</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Вітрина 2: Інтерактивні спортсмени -->
+    <section class="display-case">
+        <h2>Відомі спортсмени</h2>
+        <div class="athletes-grid">
+            <div class="athlete-item" data-info="Ліонель Мессі - футболіст, 7-разовий володар Золотого м'яча.">
+                <img src="img/Messi.webp" alt="Ліонель Мессі">
+                <p>Ліонель Мессі</p>
+            </div>
+            <div class="athlete-item" data-info="Майкл Джордан - легендарний баскетболіст, 6-разовий чемпіон NBA.">
+                <img src="img/Jordan.jpg" alt="Майкл Джордан">
+                <p>Майкл Джордан</p>
+            </div>
+            <div class="athlete-item" data-info="Роджер Федерер - один із найкращих тенісистів всіх часів.">
+                <img src="img/Federer.webp" alt="Роджер Федерер">
+                <p>Роджер Федерер</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Вітрина 3: Додати свої улюблені види спорту -->
+    <section class="display-case">
+        <h2>Ваші улюблені види спорту</h2>
+        <div class="user-sports-grid" id="user-sports">
+            <!-- Додані користувачем види спорту -->
+        </div>
+        <form id="add-sport-form">
+            <input type="text" id="sport-name" placeholder="Назва спорту" required>
+            <input type="url" id="sport-image" placeholder="URL зображення" required>
+            <button type="submit">Додати спорт</button>
+        </form>
+    </section>
+</main>
+
+<footer class="footer">
+    <p>&copy; 2024 Спортивна Вітрина. Всі права захищені.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
